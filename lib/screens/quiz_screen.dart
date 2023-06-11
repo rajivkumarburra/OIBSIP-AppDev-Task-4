@@ -50,6 +50,10 @@ class _QuizScreenState extends State<QuizScreen> {
           final documents = snapshot.data!.data();
           return Container(
             padding: const EdgeInsets.all(20),
+            margin: EdgeInsets.only(
+              top: MediaQuery.of(context).size.height * 0.1,
+              bottom: MediaQuery.of(context).size.height * 0.1,
+            ),
             child: Column(
               children: [
                 Text(
@@ -59,7 +63,7 @@ class _QuizScreenState extends State<QuizScreen> {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 50),
                 ...documents['options'].keys.toList().map(
                   (option) {
                     return Container(
