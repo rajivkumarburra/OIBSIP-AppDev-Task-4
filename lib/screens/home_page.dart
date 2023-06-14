@@ -73,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     end: Alignment.bottomLeft,
                   ).createShader(bounds),
                   child: const Text(
-                    'Select a category to start the quiz',
+                    'Select a category to start the quiz.',
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,

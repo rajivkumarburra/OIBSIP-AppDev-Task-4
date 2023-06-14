@@ -13,5 +13,7 @@ class Question {
     'General Knowledge',
     'Entertainment',
     'Science',
+    'Literature',
+    'Food',
   ];
 }
