@@ -10,3 +10,5 @@ The quiz categories are
 * General Knowledge
 * Science
 * Entertainment
+* Literature
+* Food
