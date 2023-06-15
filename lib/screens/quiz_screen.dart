@@ -71,7 +71,11 @@ class _QuizScreenState extends State<QuizScreen> {
                       width: double.infinity,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: Theme.of(context).primaryColor,
+                        color: isAnswered
+                            ? option == documents['correctAnswer']
+                                ? const Color.fromARGB(255, 17, 161, 22)
+                                : Colors.red
+                            : Theme.of(context).primaryColor,
                       ),
                       child: ListTile(
                         title: Text(
